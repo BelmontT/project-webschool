@@ -1,0 +1,68 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Venha conhecer a melhor Escola de Promação agora mesmo!">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" type="text/css" href="../layout/css/style.css">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <title>Belmont School</title>
+    </head>
+    <header>
+        <div id="headerContect">
+            <a href="../index.html"><img src="../layout/images/logo.png" title="Belmont School"></a><div class="headerSchoolName">Belmont School</div>
+            <div id="headerMenu">
+                <a href="register.html" class="menuHeader">Registrar</a>
+                <a href="students_list.html" class="menuHeader">Lista</a>
+                <a href="contact.html" class="menuHeader">Contato</a>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div id="content">
+            <a href="../index.html"><img src="../layout/images/logo.png"></a><p style="position:abolute;">Belmont School</p><br>
+            <form action="register_completed.html">
+                <div id=formHeader>Nome</div>
+                <input type="text" name="name" required><br>
+
+                <div id=formHeader>Data de Nascimento</div>
+                <input type="date" name="date_of_birth" required><br>
+
+                <div id=formHeader>E-mail</div>
+                <input type="email" name="email" required><br>
+
+                <div id=formHeader>Turma</div>
+                <select>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                </select><br>
+
+                <div id=formHeader>Gênero</div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Homem</label>
+                
+                <input type="radio" id="female" name="gender" value="female" >
+                <label for="female">Mulher</label>
+
+                <div id=formHeader>Preferências</div>
+                <input type="checkbox" name="checkbox" id="sport" value="sport" required>
+                <label for="sport">Esporte</label>
+
+                <input type="checkbox" name="checkbox" id="music" value="music">
+                <label for="music">Música</label>
+
+                <input type="checkbox" name="checkbox" id="art" value="art">
+                <label for="art">Arte</label><br>
+
+                <div id=formHeader>Observações</div>
+                <textarea id="textarea" name="textarea" rows="3" cols="45"></textarea><br><br>
+
+                <button type="submit" id="buttonForm">Enviar</button>
+            </form>
+        </div>
+    </body>
+    <div id="footer">
+        © Todos os direitos reservados.<br>
+        <a href="contact.html">Contato</a> │ <a href="terms.html">Termos</a>
+    </div>
+</html>
